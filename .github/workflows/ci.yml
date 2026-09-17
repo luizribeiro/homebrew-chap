@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew style Formula/chap.rb
+      - run: brew tap luizribeiro/chap "$PWD"
+      - run: brew install luizribeiro/chap/chap
+      - run: brew test luizribeiro/chap/chap
+      - run: chap --version
