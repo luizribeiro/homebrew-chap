@@ -27,9 +27,6 @@ class Chap < Formula
   end
 
   test do
-    # The wrapper prepares its sandbox state directory before running anything,
-    # and the test sandbox HOME is longer than unix socket paths allow.
-    ENV["MSB_HOME"] = "/private/tmp/chap-msb"
     assert_match "chap-cli 0.1.0", shell_output("#{bin}/chap --version")
   end
 end
