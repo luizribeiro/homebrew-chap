@@ -3,7 +3,7 @@ class Chap < Formula
   homepage "https://github.com/luizribeiro/chap"
   url "https://github.com/luizribeiro/chap/releases/download/v0.1.0/chap-0.1.0-aarch64-apple-darwin.tar.gz"
   version "0.1.0"
-  sha256 "249b05d663658ad70d669554d640d6d18b1d3258d33e8ec148ce43b4a0be79ea"
+  sha256 "d0152f168a9a63cb75b12a1640ed1287c174ea620ed3f3ebd924bcd24e33d050"
 
   depends_on arch: :arm64
   depends_on :macos
