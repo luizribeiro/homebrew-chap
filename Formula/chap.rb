@@ -1,7 +1,7 @@
 class Chap < Formula
   desc "Consent-honoring coding agent with sandboxed tool execution"
-  homepage "https://github.com/luizribeiro/chap"
-  url "https://github.com/luizribeiro/chap/releases/download/v0.1.0/chap-0.1.0-aarch64-apple-darwin.tar.gz"
+  homepage "https://github.com/luizribeiro/chap-releases"
+  url "https://github.com/luizribeiro/chap-releases/releases/download/v0.1.0/chap-0.1.0-aarch64-apple-darwin.tar.gz"
   version "0.1.0"
   sha256 "d0152f168a9a63cb75b12a1640ed1287c174ea620ed3f3ebd924bcd24e33d050"
 
@@ -22,7 +22,7 @@ class Chap < Formula
         chap grants review <plugin>
         chap grants approve <plugin>
 
-      See https://github.com/luizribeiro/chap for details.
+      See https://github.com/luizribeiro/chap-releases for details.
     EOS
   end
 

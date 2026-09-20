@@ -11,7 +11,7 @@ version=$1
 repo_root=$(unset CDPATH; cd "$(dirname "$0")/.." && pwd)
 formula=${CHAP_FORMULA:-$repo_root/Formula/chap.rb}
 asset="chap-${version}-aarch64-apple-darwin.tar.gz"
-url="https://github.com/luizribeiro/chap/releases/download/v${version}/${asset}"
+url="https://github.com/luizribeiro/chap-releases/releases/download/v${version}/${asset}"
 
 if [ "$#" -eq 2 ]; then
   sha256=$2

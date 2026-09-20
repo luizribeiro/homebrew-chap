@@ -14,7 +14,7 @@ sed '/^  url "/d; /^  version "/d; /^  sha256 "/d' "$formula" >"$tmp_dir/before-
 sha256=9999999999999999999999999999999999999999999999999999999999999999
 CHAP_FORMULA=$formula sh "$repo_root/scripts/bump.sh" 9.9.9 "$sha256"
 
-grep -Fx '  url "https://github.com/luizribeiro/chap/releases/download/v9.9.9/chap-9.9.9-aarch64-apple-darwin.tar.gz"' "$formula" >/dev/null
+grep -Fx '  url "https://github.com/luizribeiro/chap-releases/releases/download/v9.9.9/chap-9.9.9-aarch64-apple-darwin.tar.gz"' "$formula" >/dev/null
 grep -Fx '  version "9.9.9"' "$formula" >/dev/null
 grep -Fx "  sha256 \"$sha256\"" "$formula" >/dev/null
 

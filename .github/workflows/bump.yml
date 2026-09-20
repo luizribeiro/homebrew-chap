@@ -35,7 +35,7 @@ jobs:
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-      # The tap pulls from chap's public releases, so no cross-repository credential exists.
+      # The tap pulls from the public chap-releases repository, so no cross-repository credential exists.
       - name: Bump formula
         if: steps.target.outputs.changed == 'true'
         env:

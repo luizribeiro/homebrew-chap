@@ -8,4 +8,4 @@ brew upgrade chap
 brew uninstall chap
 ```
 
-For Linux and Nix installation instructions, see the [chap repository](https://github.com/luizribeiro/chap).
+For Linux installation instructions, see the [chap-releases repository](https://github.com/luizribeiro/chap-releases).
